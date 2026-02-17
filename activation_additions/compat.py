@@ -14,7 +14,7 @@ from transformers import LogitsProcessor
 
 # %%
 
-Model = Any # TODO: better types
+Model = Any # TODO: better types ~
 
 
 @dataclass
