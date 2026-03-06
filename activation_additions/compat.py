@@ -147,7 +147,8 @@ def get_n_comparisons(prompts: List[str], model: Model, additions: List[Activati
 
     # Generate unmodified completions
     # FIXME: "Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation." should not happen. tokenizer has a set token?
-    nom_tokens = model.generate(**inputs, **port_sampling_kwargs(sampling_kwargs))
+    print("TEST")
+    nom_tokens = model.generate(**inputs, **port_sampling_kwargs(sampling_kwargs),pad_token_id=tokenizer.eos_token_id)
 
     # Generate modified completions
     blocks = activation_additions.get_blocks(model)
