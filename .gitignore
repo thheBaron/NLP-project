@@ -11,3 +11,5 @@ Concepts - final.xlsx
 converter.py
 
 */__pycache__
+
+.venv
