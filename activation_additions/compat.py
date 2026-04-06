@@ -182,22 +182,6 @@ def print_n_comparisons(
     pretty_print_completions(results=results)
 
 
-# def get_n_steered_completions_for_concept(
-#     prompts: List[str],
-#     pos_prompt: str,
-#     neg_prompt: str,
-#     model: Model,
-#     coeff: float,
-#     layer: int,
-#     custom_pad_id,
-#     **sampling_kwargs
-# ):
-    
-#     additions = get_x_vector(pos_prompt, neg_prompt, coeff, layer, model, "tokens_right", custom_pad_id)
-
-#     return get_n_steered_completions(prompts, model, additions, **sampling_kwargs)
-
-
 
 
 def get_n_baseline_completions(prompts: List[str], model: Model, **sampling_kwargs):
