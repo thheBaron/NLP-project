@@ -1,5 +1,5 @@
 # ActAdd Efficacy and Concept Compositionality in Activation Steering
-Set of tools and scripts for analyzing the behaviour of ActAdd, along with certain results from our testing as per our paper.
+Our code and data for exploring concept steerability and compositionality in LLMs using Activation Addition (ActAdd).
 ## Experiments
 Our experiments can be found at ``concept_steerability.ipynb`` and ``concept_compositionality.ipynb``.
  - ``concept_steerability.ipynb`` includes code to calculate the optimal layer of each concept, along with code to evaluate each concept at its optimal layer.
