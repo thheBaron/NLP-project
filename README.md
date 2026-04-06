@@ -2,8 +2,8 @@
 Our code and data for exploring concept steerability and compositionality in LLMs using Activation Addition (ActAdd).
 
 ## Experiments
-Our experiments can be found at **[`concept_steerability.ipynb`](./concept_steerability.ipynb)** and **[`concept_compositionality.ipynb`](./concept_compositionality.ipynb)**.
- - **[`concept_steerability.ipynb`](./concept_steerability.ipynb)**: Includes code to calculate the optimal layer of each concept, along with code to evaluate each concept at its optimal layer.
+Our experiments can be found at **[`concepts_steerability.ipynb`](concepts_steerability.ipynb)** and **[`concept_compositionality.ipynb`](./concept_compositionality.ipynb)**.
+ - **[`concepts_steerability.ipynb`](./concepts_steerability.ipynb)**: Includes code to calculate the optimal layer of each concept, along with code to evaluate each concept at its optimal layer.
  - **[`concept_compositionality.ipynb`](./concept_compositionality.ipynb)**: Includes code to calculate the log-probability shift of each pair of concepts.
  - **[`playroom.ipynb`](./playroom.ipynb)**: While not strictly a part of any experiment, this notebook contains code to generate samples from a model steered towards one or more concepts.
 
@@ -23,13 +23,13 @@ The results of the **Concept Steerability** experiment can be found under **[`co
 The results of the **Concept Compositionality** experiment can be found under **[`concept_compositionality_results`](./results/concept_compositionality_results)**, and includes the log-probability shift of each pair of concepts.
 
 ## Result Analysis
-Inside the **[`result_analysis`](./result_analysis)** directory there are many python scripts designed to analyze the results of our experiments:
- - **[`iterative_k_means_optimal_layer.py`](./result_analysis/iterative_k_means_optimal_layer.py)**: Finds semantic clusters with low optimal layer standard deviation.
- - **[`iterative_k_means_steering.py`](./result_analysis/iterative_k_means_steering.py)**: Finds semantic clusters with low steering standard deviation.
- - **[`optimal_layers.py`](./result_analysis/optimal_layers.py)**: Plots concepts by optimal layer.
- - **[`pca_semantic_visualization.py`](./result_analysis/pca_semantic_visualization.py)**: Creates interactive 3d plot of concept semantics and steerability.
- - **[`prompt_formulation_impact.py`](./result_analysis/prompt_formulation_impact.py)**: Plots graph of Type 1 (concept-only) prompts vs Type 2 (counterbalanced) prompts and calculate correlation parameters.
- - **[`steerability_scores.ipynb`](./result_analysis/steerability_scores.ipynb)**: Notebook to plot a graph combining each concept with its optimal layer and steering value.
+Inside the **[`results_analysis`](./results_analysis)** directory there are many python scripts designed to analyze the results of our experiments:
+ - **[`iterative_k_means_optimal_layer.py`](./results_analysis/iterative_k_means_optimal_layers.py)**: Finds semantic clusters with low optimal layer standard deviation.
+ - **[`iterative_k_means_steering.py`](./results_analysis/iterative_k_means_steerability.py)**: Finds semantic clusters with low steering standard deviation.
+ - **[`optimal_layers.py`](./results_analysis/optimal_layers.py)**: Plots concepts by optimal layer.
+ - **[`pca_semantic_visualization.py`](./results_analysis/pca_semantic_visualization.py)**: Creates interactive 3d plot of concept semantics and steerability.
+ - **[`prompt_formulation_impact.py`](./results_analysis/prompt_formulation_impact.py)**: Plots graph of Type 1 (concept-only) prompts vs Type 2 (counterbalanced) prompts and calculate correlation parameters.
+ - **[`steerability_scores.ipynb`](./results_analysis/steerability_scores.ipynb)**: Notebook to plot a graph combining each concept with its optimal layer and steering value.
 
 ## Acknowledgments
 The **[`activation_additions`](./activation_additions)** module used in this repository is a modified, stripped-down version of the **[original codebase](https://zenodo.org/records/13879423)** provided by **[Turner et al. (2023)](https://arxiv.org/abs/2308.10248)** in their foundational paper on Activation Addition. We thank the authors for open-sourcing their implementation.
